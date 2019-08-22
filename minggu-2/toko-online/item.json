@@ -1,0 +1,17 @@
+[
+    {
+        "nama":"levis",
+        "gambar":"assets/img/1.jpg",
+        "harga":"Rp.799.000",
+        "warna":"Biru Dongker",
+        "jenis":"kasual"
+    },
+    {
+        "nama":"corduroy",
+        "gambar":"assets/img/download.jpg",
+        "harga":"Rp.400.000",
+        "warna":"coklat",
+        "jenis":"kasual"
+
+    }
+]

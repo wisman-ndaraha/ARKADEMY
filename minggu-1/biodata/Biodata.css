@@ -1,0 +1,28 @@
+h1{
+    border: 1px  solid red;
+    width: 70px;
+    background: white;
+    border-radius: 30px;
+
+}
+.body{
+    border: 1px solid green;
+    border-radius: 20px;
+    width: 40%;
+    height: 50%;
+    margin: auto;
+    padding: 5px;
+    background: blue;
+}
+.biodata{
+    margin: aotu;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 15;
+    margin-bottom: 20px;
+    width: 330px;
+    height: 260;
+    background: black;
+    font-size: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

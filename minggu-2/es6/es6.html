@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ES-6</title>
+    <style>
+        body{
+            margin: 0 auto;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #siswa-rpl{
+            width: 800px;
+            margin: o auto;
+            background-color: greenyellow;
+        }
+        #siswa-rpl div{
+            padding: 10px;
+        }
+        #siswa-rpl div .nama-siswa{
+            display: block;
+            color:hotpink;
+        }
+        #siswa-rpl div .nama-siswa::before{
+            content: "Nama:"
+        }
+        #siswa-rpl div .nama-siswa::before{
+            content: "kelas:"
+        }
+    </style>
+</head>
+<body>
+    <div id="siswa-rpl"></div>
+    <script src="es6.js"></script>
+</body>
+</html>

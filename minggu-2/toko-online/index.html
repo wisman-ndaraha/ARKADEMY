@@ -1,0 +1,186 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Toko online celana</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        #item-list{
+            display: flex;
+            flex-wrap: wrap;    
+        }
+
+        .item{
+            flex: 1;
+            background-color:lightcyan;
+            margin: 30px;
+            text-align: center;
+            border-radius: 20px;
+        }
+        .item:hover{
+            background:yellow;
+        }
+        
+            marquee{
+                color: black
+            
+            }
+        
+    
+            h1{
+                border: 1px solid orange;
+                width: 800px;
+                margin:aoto;
+                background-color: aquamarine;
+                color: white;
+                border-radius: 20px;
+                animation-name: gantiwarna;
+                animation-duration: 6s;
+                animation-iteration-count: infinite;
+            }
+
+            @keyframes gantiwarna{
+                0% {background-color:red; left: 0px; top: 0px;}
+                25%{background-color: yellow; left: 200px; top: 0px;}
+                50%{background-color: blue; left: 200px; top: 200px;}
+                75%{background-color: green; left: 0px; top: 200px;}
+                100%{background-color: red; left: 0px; top: 0px;}
+                
+            }
+
+                .nameItem{
+                    
+                    }
+
+        .item .gambar img{
+            width: 200px;
+            margin: 10px;
+            
+        }
+
+        .pemisah{
+
+        }
+    </style>
+</head>
+<body>
+   <center><h1>CELANA BERKUALITAS</h1></center>
+   <center><h1>DAN TAHAN LAMA</h1></center>
+    <div id="item-list"></div>
+    <script>
+        let item = [
+    {
+        "nama":"levis",
+        "gambar":"img/levis.jpg",
+        "harga":"Rp.700.000",
+        "warna":"Black",
+        "jenis":"kasual"
+    },
+    {
+        "nama":"Zolora Pendek",
+        "gambar":"img/kepin.jpg",
+        "harga":"Rp.845.000",
+        "warna":"Gray",
+        "jenis":"kasual"
+    },
+    {
+        "nama":"Gucci",
+        "gambar":"img/gucci.jpg",
+        "harga":"Rp.1.210.000",
+        "warna":"black",
+        "jenis":"jeans"
+    },
+    {
+        "nama":"Cargo Jorge Pants",
+        "gambar":"img/jorge.jpg",
+        "harga":"Rp.650.000",
+        "warna":"Black",
+        "jenis":"sport"
+    },
+    {
+        "nama":"corduroy",
+        "gambar":"img/download.jpg",
+        "harga":"Rp.400.000",
+        "warna":"coklat,gray,red,white,chocolate",
+        "jenis":"kasual"
+    },
+    {
+        "nama":"Zolora",
+        "gambar":"img/jb.jpg",
+        "harga":"Rp.660.000",
+        "warna":"chocolate",
+        "jenis":"jeans"
+    },
+    {
+        "nama":"Pull&Bear",
+        "gambar":"img/pull.jpg",
+        "harga":"Rp.960.500",
+        "warna":"Gray",
+        "jenis":"kain"
+    },
+    {
+        "nama":"Denim",
+        "gambar":"img/denim.jpg",
+        "harga":"Rp.880.500",
+        "warna":"Light Blue",
+        "jenis":"jeans"
+    },
+    {
+        "nama":"Diesel",
+        "gambar":"img/celana.jpg",
+        "harga":"Rp.1.380.500",
+        "warna":"Blue",
+        "jenis":"karet"
+    },
+    {
+        "nama":"Wrangler",
+        "gambar":"img/wrangler.jpg",
+        "harga":"Rp.580.500",
+        "warna":"Blue",
+        "jenis":"karet"
+    },
+    {
+        "nama":"Calvin-klein",
+        "gambar":"img/calvin.jpg",
+        "harga":"Rp.860.500",
+        "warna":"orange",
+        "jenis":"karet"
+    },
+    {
+        "nama":"lea",
+        "gambar":"img/lea.jpg",
+        "harga":"Rp.860.500",
+        "warna":"Blue",
+        "jenis":"karet"
+    }  
+    
+];
+for(x in item){
+    var namaItem = item[x].nama;
+    let gambarItem = item[x].gambar;
+    let hargaItem = item[x].harga;
+    let warnaItem = item[x].warna;
+    let jenisItem = item[x].jenis;
+
+    document.getElementById('item-list').innerHTML +="\
+    <div class='item'>\
+    <div class='gambar'><img src='"+gambarItem+"' alt=''/></div>\
+    <div>"+namaItem+"</div>\
+    <div>"+hargaItem+"</div>\
+    <div>"+warnaItem+"</div>\
+    <div>"+jenisItem+"</div>\
+</div>\
+";
+if(((x+1)/5)===0) {
+     document.getElementById('item-list').innerHTML +="\
+     <div class='pemisah'></div>\
+  ";
+  }
+}
+    </script>
+</body>
+</html>

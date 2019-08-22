@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ponsel</title>
+</head>
+<body>
+    <style>
+        .body{
+            margin: auto;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #ponsel div{
+            padding: 10px;
+        }
+        #ponsel div .Nama.ponsel{
+            display: block;
+            color: gray;
+        }
+        #ponsel div .harga.ponsel{
+            display: block;
+            color: green;
+        }
+        #ponsel div .ram.ponsel{
+            display: block;
+            color: aqua;
+        }
+        #ponsel div .Nama.ponsel ::before{
+            content: "Nama:"
+        }
+        #ponsel div .harga.ponsel ::before{
+            content: "harga:"
+        }
+        #ponsel div .ram.ponsel.ponsel::before{
+            content: "ram:"
+        }
+        </style>      
+        </body>
+    <div id="ponsel-saya"></div>
+    <script src="ponsel.js"></script>
+</body>
+</html>

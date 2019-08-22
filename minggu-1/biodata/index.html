@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="body">
+         <center><h1>Biodata Wisman</h1></center>
+
+    <div class="Bio">
+        <center>
+       <img src="img/kevin.jpg" class="wisman ndraha" width="200px" height="200px" alt="">
+       <div id="nama"></div>
+       <div id="Kelas"></div>
+       <div id="Sekolah"></div>
+       <div id="noHp"></div>
+       <h2>Cita-cita</h2>
+     </div>
+        </center>
+      <div class="hobi"></div>
+      <div id="hobi"></div>
+      <div id="cita-cita"></div>
+      <idv id="ig"></idv>
+    </div>
+
+     <script>
+         let data = {
+             nama:"Wisman Ndraha",
+             Kelas:"XI-RPL1",
+             Sekolah:"SMK JAKARTA PUSAT1",
+             noHp:"081381509871"
+         }
+
+         let nama = document.getElementById('nama');
+         let kelas = document.getElementById('Kelas');
+         let sekolah = document.getElementById('Sekolah');
+         let noHp = document.getElementById('noHp');
+      
+
+         nama.innerHTML = data.nama
+         kelas.innerHTML = data.Kelas
+         sekolah.innerHTML = data.Sekolah
+         noHp.innerHTML = data.noHp
+       
+
+     </script>
+</body>
+</html>
